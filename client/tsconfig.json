@@ -4,15 +4,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
@@ -21,12 +14,18 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "plugins": [
+      {"name": "@angular/language-service"}
+    ],
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
   },
   "angularCompilerOptions": {
+    "preserveWhitespaces": "off",
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
   }
 }
