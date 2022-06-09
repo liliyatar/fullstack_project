@@ -7,7 +7,7 @@ import { AuthService } from '../shared/services/auth.service';
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
-  styleUrls: ['./login-page.component.css']
+  styleUrls: ['./login-page.component.css'],
 })
 export class LoginPageComponent implements OnInit, OnDestroy {
 
@@ -27,7 +27,7 @@ export class LoginPageComponent implements OnInit, OnDestroy {
         [Validators.required, Validators.email]
       ),
       password: new FormControl(
-        null, 
+        null,
         [Validators.required,Validators.minLength(6)]
       )
     });

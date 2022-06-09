@@ -1,8 +1,8 @@
-import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
-import { tap } from "rxjs/operators";
-import { Observable } from "rxjs";
-import { User } from "../interfaces";
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { tap } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { User } from '../interfaces';
 
 @Injectable({
     providedIn: 'root'
