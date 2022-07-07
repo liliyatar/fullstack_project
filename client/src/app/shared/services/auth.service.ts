@@ -13,8 +13,8 @@ export class AuthService {
 
     }
 
-    public register() {
-
+    public register(user: User): Observable<User> {
+        return this.http.post<User>('api/auth/register', user);
     }
 
     public login(user: User): Observable<{token: string}> {
@@ -29,5 +29,18 @@ export class AuthService {
 
     public setToken(token: string) {
         this.token = token;
+    }
+
+    public getToken(): string {
+        return this.token;
+    }
+
+    public isAuthenticated(): boolean {
+        return !!this.token;
+    }
+
+    public logout() {
+        this.setToken(null);
+        localStorage.clear();
     }
 }
