@@ -20,13 +20,14 @@
     "@angular/platform-browser-dynamic": "^14.0.1",
     "@angular/router": "^14.0.1",
     "@types/node": "^17.0.41",
+    "chart.js": "^3.8.0",
     "core-js": "^3.22.8",
+    "eslint": "^8.17.0",
     "materialize-css": "^1.0.0-rc.2",
     "protractor": "^7.0.0",
     "rxjs": "~7.5.5",
     "ts-node": "^10.8.1",
     "tslib": "^2.4.0",
-    "eslint": "^8.17.0",
     "zone.js": "~0.11.5"
   },
   "devDependencies": {
